@@ -14,13 +14,13 @@ import { AuthenMiddleware } from 'common/middleware/authen.middleware';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: '127.0.0.1',
+      host: 'MYSQL8002.site4now.net',
       port: 3306,
-      username: 'root',
+      username: 'a9e54f_victorn',
       password: 'aA123!@#',
-      database: 'beverage-store',
+      database: 'db_a9e54f_victorn',
       entities: [__dirname + '/**/*.entity{.js,.ts}'],
-      // synchronize: true,
+      synchronize: true,
       logging: true,
     }),
     UserModule,
